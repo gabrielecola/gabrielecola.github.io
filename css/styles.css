@@ -719,6 +719,7 @@ progress {
 
 .list-inline-item {
   display: inline-block;
+  padding: 0 16px;
 }
 
 .list-inline-item:not(:last-child) {
@@ -11725,6 +11726,10 @@ img.resumeIcon--13 {
   width: 55px;
 }
 
+.resumeIcon--14 {
+  width: 92px;
+}
+
 #w__body #sideNav {
   background-color: #16324f !important;
 }
@@ -11794,6 +11799,19 @@ a.educationLink {
   background-color: #16324F;
   left: -27px;
   top: 27px;
+}
+
+.interestP {
+  max-width: 700px;
+}
+
+.skillsLink,
+.skillsLink:hover,
+.skillsLink:active,
+.skillsLink:visited,
+.skillsLink:focus {
+  text-decoration: none;
+  display: inline-block;
 }
 
 
