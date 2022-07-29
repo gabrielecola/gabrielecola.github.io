@@ -7528,7 +7528,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 16px !important;
 }
 
 .mb-auto {
@@ -11764,7 +11764,7 @@ a.educationLink {
 }
 
 .mainLogo {
-  width: 340px;
+  width: 356px;
   margin-bottom: 56px;
   max-width: 100%;
 }
