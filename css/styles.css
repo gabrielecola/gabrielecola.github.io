@@ -11769,6 +11769,33 @@ a.educationLink {
   max-width: 100%;
 }
 
+.dotSign {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #16324F;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  margin-right: 16px;
+  position: relative;
+  margin-left: -34px;
+  background-color: #fff;
+}
+
+.educationPoints__wrapper {
+  position: relative;
+}
+
+.educationPoints__line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #16324F;
+  left: -27px;
+  top: 27px;
+}
+
 
 
 /* M E D I A  Q U E R I E S */
@@ -11780,7 +11807,7 @@ a.educationLink {
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 3rem;
+    padding-left: 88px;
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -11795,12 +11822,13 @@ a.educationLink {
 
 @media only screen and (max-width: 992px) {
   h1.mb-0 {
-    font-size: 56px;
-    padding-top: 32px;
+    font-size: 10px;
+    left: -300px;
   }
 
   .subTitle {
-    font-size: 27px;
+    font-size: 10px;
+    left: -300px;
   }
 
   section.resume-section {
@@ -11824,6 +11852,24 @@ a.educationLink {
 
   #interests .section.resume-section {
     padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-brand.js-scroll-trigger span.d-block.d-lg-none {
+      display: none !important;
+  }
+
+  .mainLogo {
+    width: 286px;
+  }
+
+  .educationPoints__wrapper {
+    margin-left: 40px;
+  }
+
+  .educationPoints__line {
+    top: 20px;
   }
 }
 
