@@ -11734,15 +11734,16 @@ img.resumeIcon--13 {
 }
 
 .subTitle {
-  font-size: 32px;
-  font-weight: 500;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  text-transform: unset;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 h1.mb-0 {
-  font-size: 73px;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
 }
 
 .resume-section-content .text-primary {
@@ -11760,6 +11761,12 @@ a.educationLink {
 
 .subheading {
   font-size: 21px;
+}
+
+.mainLogo {
+  width: 340px;
+  margin-bottom: 56px;
+  max-width: 100%;
 }
 
 
