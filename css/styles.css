@@ -11658,6 +11658,7 @@ body {
 .portfolio__p {
   font-size: 16px;
   margin-top: 16px;
+  color: #6c757d;
 }
 
 .resumeIcon--1 {
@@ -11812,6 +11813,14 @@ a.educationLink {
 .skillsLink:focus {
   text-decoration: none;
   display: inline-block;
+}
+
+.projectLink,
+.projectLink:hover
+.projectLink:active,
+.projectLink:visited,
+.projectLink:focus {
+  text-decoration: none;
 }
 
 
