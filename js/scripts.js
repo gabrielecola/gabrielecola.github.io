@@ -37,7 +37,61 @@ function matchHeightPortfolio() {
     $('.portfolio__innerWrapper').matchHeight();
 }
 
+function projectFiltering() {
+  jQuery('.portfolio__filter--wrapper > span').on('click', function(){
+    var filter = jQuery(this).attr('data');
+    
+    jQuery('.resume-section-content').attr('id', filter);
+
+    if(filter == 'All') {
+
+    } else {
+      jQuery('.projectLink').css({
+        'transform' : 'scale(0)'
+      });
+
+      setInterval(myTimer, 400);
+
+        function myTimer() {
+          jQuery('.projectLink').css({
+            'display' : 'none'
+          });
+        }
+
+        setInterval(myTimer2, 800);
+
+        function myTimer2() {
+          jQuery('.projectLink').each(function(){
+            var projectCat = jQuery(this).attr('data');
+            if (projectCat == filter) {
+              jQuery(this).css({
+                'display' : 'block',
+                'transform' : 'scale(1)'
+              });
+            }
+            
+          });
+        }
+
+      
+    }
+  });
+}
+
+function filteringPortfolio() {
+  var filterizd = $('.filtr-container').filterizr({
+	
+  });
+
+  jQuery('.portfolio__filter--wrapper span').on('click', function(){
+    jQuery('.portfolio__filter--wrapper span').removeClass('active');
+    jQuery(this).toggleClass('active');
+  });
+}
+
 
 jQuery( document ).ready(function() {
     matchHeightPortfolio();
+    //projectFiltering();
+    filteringPortfolio();
 });
