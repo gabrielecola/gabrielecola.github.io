@@ -11580,8 +11580,6 @@ section.resume-section .resume-section-content {
 }
 
 .portfolio__singleProj {
-  float: left;
-  width: 50%;
   padding: 24px 16px;
 }
 
@@ -11623,9 +11621,19 @@ body {
   text-transform: unset;
 }
 
-.svg-inline--fa.fa-github {
+.svg-inline--fa.fa-github,
+.svg-inline--fa.fa-file-pdf {
   color: #000;
   font-size: 22px;
+  margin-right: 8px;
+}
+
+.educationPdfIcon {
+  margin-left: 8px;
+}
+
+.social-icon .svg-inline--fa.fa-github {
+  margin-right: 0;
 }
 
 .social-icon .svg-inline--fa.fa-github {
@@ -11820,7 +11828,45 @@ a.educationLink {
 .projectLink:active,
 .projectLink:visited,
 .projectLink:focus {
-  text-decoration: none;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.projectLink a,
+.projectLink a:hover,
+.projectLink a:active,
+.projectLink a:visited,
+.projectLink a:focus {
+  text-decoration: none !important;
+}
+
+.portfolio__filter--wrapper {
+  min-height: 58px;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  margin: 24px 16px 8px;
+}
+
+.portfolio__filter--wrapper span,
+.portfolio__filter--wrapper span:hover {
+  display: inline-block;
+  margin: 4px 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.portfolio__filter--wrapper span.active {
+  font-weight: 700;
+  color: #16324f;
 }
 
 
@@ -11879,6 +11925,14 @@ a.educationLink {
 
   #interests .section.resume-section {
     padding-top: 0;
+  }
+
+  .projectLink,
+  .projectLink:hover
+  .projectLink:active,
+  .projectLink:visited,
+  .projectLink:focus {
+    width: 100% !important;
   }
 }
 
