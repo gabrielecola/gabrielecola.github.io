@@ -145,7 +145,7 @@
                               <h3 class="mb-0"><span class="dotSign"></span>Universit&agrave; degli Studi di Napoli Federico II</h3>
                               <div class="subheading mb-3">Bachelor’s Degree in Statistics</div>
                               <div><b>Grade:</b> 102/110<br>
-                                  <b>Thesis:</b> “The Imbalance problem in Classification” <a class="educationLink" target="_blank" href="https://gabrielecola.github.io/pdf/Dissertation.pdf"><i class="fa-solid fa-cloud-arrow-down"></i></a><br>
+                                  <b>Thesis:</b> “The Imbalance problem in Classification” <a class="educationLink" target="_blank" href="https://gabrielecola.github.io/pdf/Dissertation.pdf"><i class="fa-solid fa-file-pdf educationPdfIcon"></i></a><br>
                                   <b>Relevant coursework:</b> Statistical Learning, Operational Research, Databases, Probability, Inferential Statistics, Time Series, Graph
                                   Theory, Linear Algebra,Machine Learning</div>
                           </div>
@@ -235,73 +235,85 @@
                     <h2 class="mb-5">Portfolio</h2>
                     <div class="subheading mb-3">Projects</div>
 
-                    <!-- Single Project 1 -->
-                    <a class="projectLink" href="https://github.com/gabrielecola/GLM-methods-to-deal-with-count-data" target="_blank">
-                      <div class="portfolio__wrapper">
-                          <div class="portfolio__singleProj">
-                              <div class="portfolio__innerWrapper">
-                                  <div class="portfolio__headerImg" style="background-image: url('assets/img/GLM-for-analyzing-the-Trend-of-Bike-sharing.jpg');"></div>
-                                  <div class="portfolio__contentWrapper">
-                                      <h4 class="portfolio__category">Generalized Linear Models</h4>
-                                      <h3 class="portfolio__title">GLM for analyzing the Trend of Bike sharing</h3>
-                                      <i class="fab fa-github"></i>
-                                      <p class="portfolio__p">The aim of this project is to analyze how the count of rented bikes are affected by some variables (i.e Temperature, Weather conditions). The models adopted are GLMs, in particular the ones that deal with count data.</p>
-                                      <span class="portfolio__tag">Poisson Regression</span>
-                                      <span class="portfolio__tag">Negative Binomial Regression</span>
-                                      <span class="portfolio__tag">Tidyverse</span>
-                                      <span class="portfolio__tag">R Markdown</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
+                    <div class="portfolio__filter--wrapper">
+                      <span class="active" data-filter="all">All</span>
+                      <span data-filter="Regression">Regression</span>
+                      <span data-filter="Classification">Classification</span>
+                    </div>
 
-                    <!-- Single Project 2 -->
-                    <a class="projectLink" href="https://github.com/gabrielecola/Imbalance_classification_problem" target="_blank">
-                      <div class="portfolio__wrapper">
-                          <div class="portfolio__singleProj">
-                              <div class="portfolio__innerWrapper">
-                                  <div class="portfolio__headerImg" style="background-image: url('assets/img/Imbalance-classification-problem.png');"></div>
-                                  <div class="portfolio__contentWrapper">
-                                      <h4 class="portfolio__category">Classification</h4>
-                                      <h3 class="portfolio__title">Imbalance classification problem</h3>
-                                      <i class="fab fa-github"></i>
-                                      <a href="http://gabrielecola.github.io/pdf/Dissertation.pdf" target="_blank"><i class="fab fa-github"></i></a>
-                                      <p class="portfolio__p">Final dissertation for the BSc in Statistics at Università degli Studi di Napoli Federico II. The document proposes several approaches to deal with Class Imbalance.</p>
-                                      <span class="portfolio__tag">Supervised Learning</span>
-                                      <span class="portfolio__tag">Oversampling</span>
-                                      <span class="portfolio__tag">Undersampling</span>
-                                      <span class="portfolio__tag">Cost-sensitive algorithm</span>
-                                      <span class="portfolio__tag">LaTex</span>
-                                      <span class="portfolio__tag">R Markdown</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
+                    <div class="filtr-container">
+                      <!-- Single Project 1 -->
+                      <a class="projectLink filtr-item" data-category="Regression" href="https://github.com/gabrielecola/GLM-methods-to-deal-with-count-data" target="_blank">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__singleProj">
+                                <div class="portfolio__innerWrapper">
+                                    <div class="portfolio__headerImg" style="background-image: url('assets/img/GLM-for-analyzing-the-Trend-of-Bike-sharing.jpg');"></div>
+                                    <div class="portfolio__contentWrapper">
+                                        <h4 class="portfolio__category">Generalized Linear Models</h4>
+                                        <h3 class="portfolio__title">GLM for analyzing the Trend of Bike sharing</h3>
+                                        <i class="fab fa-github"></i>
+                                        <p class="portfolio__p">The aim of this project is to analyze how the count of rented bikes are affected by some variables (i.e Temperature, Weather conditions). The models adopted are GLMs, in particular the ones that deal with count data.</p>
+                                        <span class="portfolio__tag">Poisson Regression</span>
+                                        <span class="portfolio__tag">Negative Binomial Regression</span>
+                                        <span class="portfolio__tag">Tidyverse</span>
+                                        <span class="portfolio__tag">R Markdown</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </a>
 
-                    <!-- Single Project 3 -->
-                    <a class="projectLink" href="https://github.com/gabrielecola/BayesianApproach_CO2" target="_blank">
-                      <div class="portfolio__wrapper">
-                          <div class="portfolio__singleProj">
-                              <div class="portfolio__innerWrapper">
-                                  <div class="portfolio__headerImg" style="background-image: url('assets/img/A-Bayesian-Approach-to-contrast-CO2-Emission.jpg');"></div>
-                                  <div class="portfolio__contentWrapper">
-                                      <h4 class="portfolio__category">Bayesian Modelling</h4>
-                                      <h3 class="portfolio__title">A Bayesian Approach to contrast CO2 Emission</h3>
-                                      <i class="fab fa-github"></i>
-                                      <p class="portfolio__p">The aim of this project is to analyze how the count of CO2 emission are affected by some variable (i.e Cylinders, Engine size, Transmission). The models adopted are the Bayesian Model, in particular the Linear Regression,Poisson, Hierarchical model.</p>
-                                      <span class="portfolio__tag">STAN</span>
-                                      <span class="portfolio__tag">JAGS</span>
-                                      <span class="portfolio__tag">Bayesian Linear Regression</span>
-                                      <span class="portfolio__tag">Bayesian Poisson Regression</span>
-                                      <span class="portfolio__tag">Bayesian Hierarchical Model</span>
-                                      <span class="portfolio__tag">R Markdown</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
+                      <!-- Single Project 2 -->
+                      <span class="projectLink filtr-item" data-category="Classification">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__singleProj">
+                                <div class="portfolio__innerWrapper">
+                                  <a href="https://github.com/gabrielecola/Imbalance_classification_problem" target="_blank">
+                                      <div class="portfolio__headerImg" style="background-image: url('assets/img/Imbalance-classification-problem.png');"></div>
+                                  </a>
+                                    <div class="portfolio__contentWrapper">
+                                        <h4 class="portfolio__category">Classification</h4>
+                                        <h3 class="portfolio__title">Imbalance classification problem</h3>
+                                        <a href="https://github.com/gabrielecola/Imbalance_classification_problem" target="_blank">
+                                          <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="http://gabrielecola.github.io/pdf/Dissertation.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+                                        <p class="portfolio__p">Final dissertation for the BSc in Statistics at Università degli Studi di Napoli Federico II. The document proposes several approaches to deal with Class Imbalance.</p>
+                                        <span class="portfolio__tag">Supervised Learning</span>
+                                        <span class="portfolio__tag">Oversampling</span>
+                                        <span class="portfolio__tag">Undersampling</span>
+                                        <span class="portfolio__tag">Cost-sensitive algorithm</span>
+                                        <span class="portfolio__tag">LaTex</span>
+                                        <span class="portfolio__tag">R Markdown</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </span>
+
+                      <!-- Single Project 3 -->
+                      <a class="projectLink filtr-item" data-category="Regression" href="https://github.com/gabrielecola/BayesianApproach_CO2" target="_blank">
+                        <div class="portfolio__wrapper">
+                            <div class="portfolio__singleProj">
+                                <div class="portfolio__innerWrapper">
+                                    <div class="portfolio__headerImg" style="background-image: url('assets/img/A-Bayesian-Approach-to-contrast-CO2-Emission.jpg');"></div>
+                                    <div class="portfolio__contentWrapper">
+                                        <h4 class="portfolio__category">Bayesian Modelling</h4>
+                                        <h3 class="portfolio__title">A Bayesian Approach to contrast CO2 Emission</h3>
+                                        <i class="fab fa-github"></i>
+                                        <p class="portfolio__p">The aim of this project is to analyze how the count of CO2 emission are affected by some variable (i.e Cylinders, Engine size, Transmission). The models adopted are the Bayesian Model, in particular the Linear Regression,Poisson, Hierarchical model.</p>
+                                        <span class="portfolio__tag">STAN</span>
+                                        <span class="portfolio__tag">JAGS</span>
+                                        <span class="portfolio__tag">Bayesian Linear Regression</span>
+                                        <span class="portfolio__tag">Bayesian Poisson Regression</span>
+                                        <span class="portfolio__tag">Bayesian Hierarchical Model</span>
+                                        <span class="portfolio__tag">R Markdown</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -373,6 +385,7 @@
         <!-- jQuery-->
         <script src="js/jquery.js"></script>
         <script src="js/match-height.js"></script>
+        <script src="js/jquery.filterizr.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
