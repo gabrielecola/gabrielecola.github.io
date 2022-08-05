@@ -91,7 +91,15 @@ function filteringPortfolio() {
 
 
 jQuery( document ).ready(function() {
-    matchHeightPortfolio();
+  if($(window).width()>992) {
+    //matchHeightPortfolio();
+  }
     //projectFiltering();
     filteringPortfolio();
+});
+
+$( window ).resize(function() {
+  if($(window).width()>992) {
+    //matchHeightPortfolio();
+  }
 });

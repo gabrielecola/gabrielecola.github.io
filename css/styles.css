@@ -11585,6 +11585,8 @@ section.resume-section .resume-section-content {
 
 body {
   background-color: #f9fafb;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .portfolio__innerWrapper {
@@ -11869,6 +11871,11 @@ a.educationLink {
   color: #16324f;
 }
 
+html#w__body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 
 
 /* M E D I A  Q U E R I E S */
@@ -11907,6 +11914,7 @@ a.educationLink {
   section.resume-section {
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-bottom: 106px;
   }
 
   .portfolio__singleProj {
@@ -11933,6 +11941,11 @@ a.educationLink {
   .projectLink:visited,
   .projectLink:focus {
     width: 100% !important;
+  }
+
+  .projectLink.filtr-item {
+    transform: unset !important;
+    position: relative !important;
   }
 }
 
