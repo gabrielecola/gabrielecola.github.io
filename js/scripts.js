@@ -95,7 +95,7 @@ jQuery( document ).ready(function() {
     //matchHeightPortfolio();
   }
     //projectFiltering();
-    filteringPortfolio();
+    //filteringPortfolio();
 });
 
 $( window ).resize(function() {
