@@ -92,7 +92,7 @@ function filteringPortfolio() {
 
 jQuery( document ).ready(function() {
   if($(window).width()>992) {
-    //matchHeightPortfolio();
+    matchHeightPortfolio();
   }
     //projectFiltering();
     //filteringPortfolio();
@@ -100,6 +100,6 @@ jQuery( document ).ready(function() {
 
 $( window ).resize(function() {
   if($(window).width()>992) {
-    //matchHeightPortfolio();
+    matchHeightPortfolio();
   }
 });
