@@ -79,8 +79,16 @@ function projectFiltering() {
 }
 
 function filteringPortfolio() {
-  var filterizd = $('.filtr-container').filterizr({
-	
+  //var filterizd = $('.filtr-container').filterizr({	});
+
+  $('.portfolio__filter--wrapper span').click(function(){
+    var value = $(this).attr('data-filter');
+    if (value == 'all') {
+      $('.filtr-item').show('1000');
+    } else {
+      $('.filtr-item').not('.' + value).hide('1000');
+      $('.filtr-item').filter('.'+value).show('1000');
+    }
   });
 
   jQuery('.portfolio__filter--wrapper span').on('click', function(){
@@ -95,7 +103,7 @@ jQuery( document ).ready(function() {
     matchHeightPortfolio();
   }
     //projectFiltering();
-    //filteringPortfolio();
+    filteringPortfolio();
 });
 
 $( window ).resize(function() {
