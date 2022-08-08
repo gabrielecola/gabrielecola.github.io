@@ -11831,7 +11831,7 @@ a.educationLink {
 .projectLink:visited,
 .projectLink:focus {
   text-decoration: none !important;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   transform: scale(1);
   display: inline-block;
   float: left;
