@@ -34,7 +34,9 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 function matchHeightPortfolio() {
-    $('.portfolio__innerWrapper').matchHeight();
+    $('.portfolio__innerWrapper').matchHeight({
+      byRow: false
+    });
 }
 
 function projectFiltering() {
