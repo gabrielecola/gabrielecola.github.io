@@ -39,6 +39,11 @@ function matchHeightPortfolio() {
     });
 }
 
+function matchHeightBlog() {
+  $('.blog__matchHeight').matchHeight({
+  });
+}
+
 function projectFiltering() {
   jQuery('.portfolio__filter--wrapper > span').on('click', function(){
     var filter = jQuery(this).attr('data');
@@ -103,6 +108,7 @@ function filteringPortfolio() {
 jQuery( document ).ready(function() {
   if($(window).width()>992) {
     matchHeightPortfolio();
+    matchHeightBlog();
   }
     //projectFiltering();
     filteringPortfolio();
@@ -111,5 +117,6 @@ jQuery( document ).ready(function() {
 $( window ).resize(function() {
   if($(window).width()>992) {
     matchHeightPortfolio();
+    matchHeightBlog();
   }
 });

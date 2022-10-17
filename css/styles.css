@@ -11643,16 +11643,8 @@ body {
 }
 
 .portfolio__tag {
-  background-color: #f3f4f6;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
-  margin: 2px 4px;
-  padding: 2px 4px;
-  display: inline-block;
-}
-
-.portfolio__tag {
+  transition: all 0.3s ease;
+  color: #000;
   background-color: #f3f4f6;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -11876,6 +11868,96 @@ html#w__body {
   width: 100vw;
 }
 
+.blog__thumbnail {
+  width: 240px;
+  height: 135px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 32px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.blog__thumbnail--wrapper {
+  float: left;
+}
+
+.blog__postTitle {
+  font-size: 22px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+
+.blog__content--wrapper {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.08);
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.08);
+  padding: 16px 32px;
+  margin: 8px 0 16px;
+}
+
+.blog__singlePost {
+  transition: all 0.3s ease;
+  background-color: rgba(255,255,255,1);
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0);
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0);
+  padding: 16px 32px;
+  margin: 8px 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.blog__singlePost:hover {
+  transition: all 0.3s ease;
+  background-color: rgba(42,98,143,0.08);
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.05);
+  box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.05);
+}
+
+.blog__singlePost:hover .portfolio__tag {
+  transition: all 0.3s ease;
+  background-color: #dbdbdb;
+}
+
+.blog__singlePost--link,
+.blog__singlePost--link:hover,
+.blog__singlePost--link:active,
+.blog__singlePost--link:visited,
+.blog__singlePost--link:focus {
+  text-decoration: none;
+}
+
+.blog__description {
+  color: #000;
+}
+
+.blog__readAll--link,
+.blog__readAll--link:hover,
+.blog__readAll--link:active,
+.blog__readAll--link:visited,
+.blog__readAll--link:focus {
+  color: #000;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  font-weight: 600;
+}
+
+/* TEMPORARY CSS RULES START */
+
+#w__body .testMode .testModeItem {
+  display: none !important;
+}
+
+/* TEMPORARY CSS RULES END */
 
 
 /* M E D I A  Q U E R I E S */
