@@ -8834,9 +8834,9 @@ textarea.form-control-lg {
     flex: 1 1 auto !important;
   }
 
-  .flex-md-row {
+  /* .flex-md-row {
     flex-direction: row !important;
-  }
+  } */
 
   .flex-md-column {
     flex-direction: column !important;
@@ -11951,6 +11951,35 @@ html#w__body {
   font-weight: 600;
 }
 
+.workDescription {
+  margin-bottom: 24px;
+}
+
+.workDescription ul li {
+  margin-bottom: 8px;
+}
+
+.dotSign.workDot {
+  width: 32px;
+  height: 32px;
+  margin-left: -47px;
+  top: 4px;
+}
+
+.dotSign.workDot svg {
+  color: #16324F;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#work .educationPoints__line {
+  left: -33px;
+}
+
+
 /* TEMPORARY CSS RULES START */
 
 #w__body .testMode .testModeItem {
@@ -11973,6 +12002,10 @@ html#w__body {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .flex-md-row {
+    flex-direction: row !important;
   }
 }
 
@@ -12029,6 +12062,34 @@ html#w__body {
     transform: unset !important;
     position: relative !important;
   }
+
+  .blog__thumbnail--wrapper {
+    float: none;
+    margin-bottom: 16px;
+  }
+
+  .blog__thumbnail {
+    width: 100%;
+  }
+
+  .blog__singlePost {
+    padding: 0;
+  }
+
+  .blog__singlePost--link {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .educationPoints__wrapper {
+    margin-left: 40px;
+  }
+
+  .educationPoints__line {
+    top: 20px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -12040,12 +12101,15 @@ html#w__body {
     width: 286px;
   }
 
-  .educationPoints__wrapper {
-    margin-left: 40px;
+  .blog__content--wrapper {
+    padding: 16px;
   }
 
-  .educationPoints__line {
-    top: 20px;
+  .resume-section-content .text-primary {
+    text-align: left;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 16px;
   }
 }
 
