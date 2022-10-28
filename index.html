@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
+  <link rel="stylesheet" href="css/venobox.min.css" type="text/css" media="screen" />
   <link href="css/styles.css" rel="stylesheet" />
 </head>
 
@@ -343,7 +344,7 @@
       </div>
     </section>
     <!-- Portfolio-->
-    <section class="resume-section" id="portfolio">
+   <!-- <section class="resume-section" id="portfolio">
       <div class="resume-section-content">
         <h2 class="mb-5">Portfolio</h2>
         <div class="subheading mb-3">Projects</div>
@@ -353,9 +354,11 @@
           <span data-filter="Regression">Regression</span>
           <span data-filter="Classification">Classification</span>
         </div>
-
+        
         <div class="filtr-container">
+          -->
           <!-- Single Project 1 -->
+          <!--
           <a class="projectLink filtr-item Regression"
             href="https://github.com/gabrielecola/GLM-methods-to-deal-with-count-data" target="_blank">
             <div class="portfolio__wrapper">
@@ -379,8 +382,10 @@
               </div>
             </div>
           </a>
+          -->
 
           <!-- Single Project 2 -->
+          <!--
           <span class="projectLink filtr-item Classification">
             <div class="portfolio__wrapper">
               <div class="portfolio__singleProj">
@@ -410,8 +415,10 @@
               </div>
             </div>
           </span>
+          -->
 
           <!-- Single Project 3 -->
+          <!--
           <a class="projectLink filtr-item Regression"
             href="https://github.com/gabrielecola/BayesianApproach_CO2" target="_blank">
             <div class="portfolio__wrapper">
@@ -440,6 +447,73 @@
         </div>
       </div>
     </section>
+    -->
+
+    <section class="resume-section" id="portfolio">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Portfolio</h2>
+        <div class="subheading mb-3">Projects</div>
+
+        <div class="portfolio__filter--wrapper">
+          <span class="active" data-filter="all">All</span>
+          <span data-filter="Regression">Regression</span>
+          <span data-filter="Classification">Classification</span>
+        </div>
+        
+        <div class="filtr-container">
+          <div class="port__proj--wrapper">
+            <h4 class="port__proj--title">The Bike Sharing system analyzed by GLM</h4>
+            <div class="port__proj--innerWrapper" style="background-image:url('assets/img/GLM-for-analyzing-the-Trend-of-Bike-sharing.jpg')">
+              <div class="port__proj--angles"></div>
+              <div class="port__proj--layer"></div>
+              <div class="port__proj--iconWrapper">
+                <i class="fas fa-info-circle port__proj--icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="my-image-links" data-vbtype="inline" title="My Description" href="#inline">Open inline content</a>
+    <a class="my-image-links" data-vbtype="inline" title="My Description" href="#inline2">Open inline content 2</a>
+
+    <div id="inline" style="display:none;">
+      <div style="background:#fff; width:100%; padding:10px;">
+          <h1>Hello world!</h1>
+          <p>this is my inline content, with custom options: </p>
+          <p>
+              </p><ul>
+                  <li><code>maxWidth</code> : <code>'400px'</code> </li>
+                  <li><code>border</code> : <code>'10px'</code></li>
+                  <li><code>bgcolor</code> : <code>'#f46f00'</code></li>
+              </ul>
+          <p></p>
+          <a href="#" class="closeme">close</a>
+          <h1><i class="fa fa-cog fa-spin"></i></h1>
+          <div class="trans">some css3 transitions</div>
+      </div>
+  </div>
+
+  <div id="inline2" style="display:none;">
+    <div style="background:#fff; width:100%; padding:10px;">
+        <h1>Hello world 2</h1>
+        <p>this is my inline content, with custom options: </p>
+        <p>
+            </p><ul>
+                <li><code>maxWidth</code> : <code>'400px'</code> </li>
+                <li><code>border</code> : <code>'10px'</code></li>
+                <li><code>bgcolor</code> : <code>'#f46f00'</code></li>
+            </ul>
+        <p></p>
+        <a href="#" class="closeme">close</a>
+        <h1><i class="fa fa-cog fa-spin"></i></h1>
+        <div class="trans">some css3 transitions</div>
+    </div>
+</div>
+  </section>
+
+
     <hr class="m-0" />
     <!-- Blog-->
     <section class="resume-section testModeItem" id="blog">
@@ -584,6 +658,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/match-height.js"></script>
   <!-- <script src="js/jquery.filterizr.min.js"></script> -->
+  <script type="text/javascript" src="js/venobox.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
 </body>

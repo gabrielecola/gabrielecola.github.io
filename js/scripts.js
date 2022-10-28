@@ -112,6 +112,15 @@ jQuery( document ).ready(function() {
   }
     //projectFiltering();
     filteringPortfolio();
+
+
+    new VenoBox({
+      selector: '.my-image-links',
+      numeration: true,
+      infinigall: true,
+      share: true,
+      spinner: 'rotating-plane'
+  });
 });
 
 $( window ).resize(function() {
