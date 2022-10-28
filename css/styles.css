@@ -11825,9 +11825,10 @@ a.educationLink {
   text-decoration: none !important;
   /* transition: all 0.3s ease; */
   transform: scale(1);
-  display: inline-block;
-  float: left;
-  width: 50%;
+  display: block;
+  width: 560px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .projectLink a,
@@ -11847,7 +11848,7 @@ a.educationLink {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-  margin: 24px 16px 8px;
+  margin: 24px 16px 32px;
 }
 
 .portfolio__filter--wrapper span,
@@ -11983,13 +11984,14 @@ html#w__body {
   width: 33.33%;
   max-width: 100%;
   float: left;
+  padding: 0 12px;
 }
 
 .port__proj--innerWrapper {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 161px;
+  height: 108px;
   position: relative;
   z-index: 50;
 }
@@ -12094,13 +12096,23 @@ html#w__body {
   cursor: pointer;
 }
 
+.port__proj--title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.vbox-inline.vbox-child {
+  background-color: transparent !important;
+}
+
 
 
 /* TEMPORARY CSS RULES START */
 
-#w__body .testMode .testModeItem {
+/* #w__body .testMode .testModeItem {
   display: none !important;
-}
+} */
 
 /* TEMPORARY CSS RULES END */
 
