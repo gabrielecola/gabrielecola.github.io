@@ -12254,3 +12254,14 @@ html#w__body {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .port__proj--wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  section.resume-section {
+    margin-bottom: unset;
+  }
+}
+
