@@ -527,6 +527,7 @@ button,
 [type=submit] {
   -webkit-appearance: button;
 }
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -11825,9 +11826,10 @@ a.educationLink {
   text-decoration: none !important;
   /* transition: all 0.3s ease; */
   transform: scale(1);
-  display: inline-block;
-  float: left;
-  width: 50%;
+  display: block;
+  width: 560px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .projectLink a,
@@ -11847,7 +11849,7 @@ a.educationLink {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-  margin: 24px 16px 8px;
+  margin: 24px 16px 32px;
 }
 
 .portfolio__filter--wrapper span,
@@ -11979,12 +11981,151 @@ html#w__body {
   left: -33px;
 }
 
+.port__proj--wrapper {
+  width: 33.33%;
+  max-width: 100%;
+  float: left;
+  padding: 0 12px;
+}
+
+.port__proj--innerWrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 108px;
+  position: relative;
+  z-index: 50;
+}
+
+.port__proj--layer {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  scale: 0.6;
+  transition: all 0.3s ease;
+}
+
+.port__proj--innerWrapper:hover .port__proj--layer {
+  scale: 1;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.port__proj--angles {
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 60;
+}
+
+.port__proj--angles:before {
+  transition: all 0.3s ease;
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  opacity: 0;
+}
+
+.port__proj--innerWrapper:hover .port__proj--angles:before {
+  transition: all 0.3s ease;
+  top: 16px;
+  left: 16px;
+  opacity: 1;
+}
+
+.port__proj--angles:after {
+  transition: all 0.3s ease;
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  opacity: 0;
+}
+
+.port__proj--innerWrapper:hover .port__proj--angles:after {
+  transition: all 0.3s ease;
+  bottom: 16px;
+  right: 16px;
+  opacity: 1;
+}
+
+.port__proj--icon {
+  transition: all 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.port__proj--innerWrapper:hover .port__proj--icon {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+
+.port__proj--iconWrapper:hover .port__proj--icon {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #E8E1C5;
+}
+
+.port__proj--iconWrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  z-index: 90;
+  cursor: pointer;
+}
+
+.port__proj--title {
+  font-size: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.vbox-inline.vbox-child {
+  background-color: transparent !important;
+}
+
+.resumeIcon--15 {
+  width: 47px;
+}
+
+.resumeIcon--16 {
+  width: 97px;
+}
+
+.resumeIcon--17 {
+  width: 119px;
+}
+
+
 
 /* TEMPORARY CSS RULES START */
 
-#w__body .testMode .testModeItem {
+/* #w__body .testMode .testModeItem {
   display: none !important;
-}
+} */
 
 /* TEMPORARY CSS RULES END */
 

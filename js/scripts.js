@@ -37,6 +37,8 @@ function matchHeightPortfolio() {
     $('.portfolio__innerWrapper').matchHeight({
       byRow: false
     });
+
+    $('.port__proj--title').matchHeight();
 }
 
 function matchHeightBlog() {
@@ -112,6 +114,9 @@ jQuery( document ).ready(function() {
   }
     //projectFiltering();
     filteringPortfolio();
+
+
+    $('.venobox').venobox()
 });
 
 $( window ).resize(function() {
