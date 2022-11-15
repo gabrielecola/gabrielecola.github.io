@@ -527,6 +527,7 @@ button,
 [type=submit] {
   -webkit-appearance: button;
 }
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -12104,6 +12105,18 @@ html#w__body {
 
 .vbox-inline.vbox-child {
   background-color: transparent !important;
+}
+
+.resumeIcon--15 {
+  width: 47px;
+}
+
+.resumeIcon--16 {
+  width: 97px;
+}
+
+.resumeIcon--17 {
+  width: 119px;
 }
 
 
