@@ -11986,6 +11986,7 @@ html#w__body {
   max-width: 100%;
   float: left;
   padding: 0 12px;
+  margin-bottom: 32px;
 }
 
 .port__proj--innerWrapper {

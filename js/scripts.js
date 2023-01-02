@@ -38,7 +38,9 @@ function matchHeightPortfolio() {
       //byRow: false
     //});
 
-    $('.port__proj--title').matchHeight();
+    $('.port__proj--title').matchHeight({
+      byRow: false
+    });
 }
 
 function matchHeightBlog() {
